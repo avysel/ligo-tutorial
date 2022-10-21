@@ -1,0 +1,7 @@
+let x = a => {
+  const age = 25;
+  {
+   const age = 3; // does not give an error
+   return age;
+  }
+};

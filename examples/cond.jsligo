@@ -1,0 +1,10 @@
+type magnitude = ["Small"] | ["Large"]; // See variant types.
+
+let compare = n => {
+  if (n < (10 as nat)) { 
+    return Small (); 
+  } 
+  else { 
+    return Large (); 
+  };
+};
