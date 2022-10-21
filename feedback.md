@@ -221,3 +221,39 @@ Got
 Invalid symbol: "->".
 Hint: Check the LIGO syntax you use.
 ```
+
+#### Unit, Options, pattern matching > Variant types
+
+Code example uses `namespace` keywork. But no explanation about what a `namespace` is.
+
+#### Records and maps > Destructuring records
+
+`We can ignore some fields of the records we can do so by using _ (underscore), like so:``
+
+But the code example does not use `_`.
+
+The `ignore` instruction is introduced here. But it should be introduce in a more general chapter, where user can find it because he's looking for it on purpose.
+
+#### Records and maps > Functional updates
+
+```
+ligo run evaluate-call record_update.jsligo "({x:2,y:3,z:1}, {dx:3,dy:4})" --entry-point xy_translate 
+File "record_update.jsligo", line 6, character 0 to line 7, character 44:
+  5 | 
+  6 | let xy_translate = (p: point, vec: vector) =>
+  7 |   ({...p, x: p.x + vec.dx, y: p.y + vec.dy});
+
+Toplevel let declaration are silently change to const declaration.
+
+File "record_update.jsligo", line 4, characters 0-31:
+  3 | 
+  4 | let origin = {x: 0, y: 0, z: 0};
+  5 | 
+
+Toplevel let declaration are silently change to const declaration.
+
+Ill-formed expression.
+At this point, one of the following is expected:
+ * a closing parenthesis ')', if definining a parenthesized expression
+ * a closing parenthesis ')' after the parameters, if defining a function expression.
+ ````
