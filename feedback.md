@@ -287,3 +287,7 @@ It's comma, not semicolon.
 ...we can use the postfix [] operator to read...
 ```
 There is no [] in the example other than PascaLIGO
+
+#### Tuples, lists, sets > defining tuples
+
+Using `full_name` as type name and variable name is confusing. In the rest of paragraph, we don't know if examples are using type or variable.
