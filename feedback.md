@@ -28,6 +28,8 @@ Please provide some explanation about `include`: relative vs absolute path? from
 
 ## Ligo documentation
 
+Globally, each function missed a clear list of input parameters and output data description.
+
 ### Introduction to LIGO
 
 #### Runnable code snippets
@@ -257,3 +259,31 @@ At this point, one of the following is expected:
  * a closing parenthesis ')', if definining a parenthesized expression
  * a closing parenthesis ')' after the parameters, if defining a function expression.
  ````
+
+#### Records and maps > updating a map
+
+The example map is sometimes called `m` and sometimes called `moves`. Update it to use the same name everywhere.
+
+(the same is true for some following paragraphs too)
+
+#### Records and maps > functional iteration over maps
+
+```
+Another approach is possible in PascaLIGO: loops (see the relevant section)
+```
+
+Don't display "PascalLigo" for any syntax and add a link to loops section.
+
+#### Records and maps > creating a non empty map
+
+```
+...Note also the semicolon separating...
+```
+It's comma, not semicolon.
+
+#### Records and maps > Accessing values
+
+```
+...we can use the postfix [] operator to read...
+```
+There is no [] in the example other than PascaLIGO
